@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jiggle JavaScript</title>
+</head>
+<body>
+
+    <p>Press the buttons to move the box!</p>
+    <button id="shrinkBtn">Shrink</button>
+    <button id="growBtn">Grow</button>
+    <button id="resetBtn">Reset</button>
+    <button id="blur">Blur</button>
+
+    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+
+    <script type="text/javascript">
+    
+
+        document.getElementById("shrinkBtn").addEventListener("click", function(){
+
+            document.getElementById("box").style.width = "25px";
+            document.getElementById("box").style.height = "25px";
+            document.getElementById("box").style.filter ="grayscale(100%)";
+
+        });
+
+        document.getElementById("growBtn").addEventListener("click", function(){
+
+            document.getElementById("box").style.height = "250px";
+            
+
+        });
+
+        document.getElementById("resetBtn").addEventListener("click", function(){
+
+            document.getElementById("box").style.height = "150px";
+            document.getElementById("box").style.width = "150px";
+            document.getElementById("box").style.filter ="none";
+
+        });
+        
+        document.getElementById("blur").addEventListener("click",function(){
+            document.getElementById("box").style.filter ="grayscale(100%)";
+            document.getElementById("box").style.filter ="blur(25px)";
+            document.getElementById("box").style.color = "blue";
+        });
+
+    
+
+    </script>
+
+</body>
+</html>

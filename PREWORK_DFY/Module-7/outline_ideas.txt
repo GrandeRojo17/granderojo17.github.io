@@ -1,0 +1,5 @@
+What are the rules of the game?
+How does that translate into code?
+Will you need to use loops? If/else statements?
+What variables will you need?
+Under what circumstances will your variables change?

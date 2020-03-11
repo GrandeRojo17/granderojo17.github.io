@@ -1,0 +1,24 @@
+What are the rules of the game?
+*click inside the button as many times as you can before the timer runs out.
+*
+
+How does that translate into code?
+define where to click
+define the time limit
+define additions to variables
+
+Will you need to use loops? If/else statements? YES
+if button clicked start count down
+if button clicked add Number to Total.
+if timer runs out:Button dissapear Display Total and then End Game
+if Game Over: Ask Play again?
+if play again = yes then reset timer and start count down
+
+What variables will you need?
+button_
+button_clicked_ boolean
+button_clicked_total
+game_start 
+game_over
+
+Under what circumstances will your variables change?

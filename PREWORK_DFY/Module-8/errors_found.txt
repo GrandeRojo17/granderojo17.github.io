@@ -1,0 +1,3 @@
+missing <h1> tags
+missing semi colons in css
+missing + when stateing in css what is what
