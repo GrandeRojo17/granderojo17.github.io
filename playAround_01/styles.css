@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(255, 234, 234);
+    text-align: center;
+
+}
+
+h1{ text-align: center;
+    text-shadow:black -1px 10px 10px ;
+    color: beige;}
+
+.button {
+    color:rgb(211, 245, 18);
+    background-color: rgb(140, 0, 255);
+    background-position: center;
+    height: 50px;
+    width: 50;
+    margin: 10;
+    padding: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+#left_header{
+
+    float:left;
+}
+
+#banner{
+    background-color: rgb(95, 42, 42);
+    border-style: solid;
+    border-color: white;
+}
+    
+#banner h1{
+    height: 100px;
+    background-color: rgb(95, 42, 42);
+    color: white;
+}
+#content{
+    width:100vw;
+float:left;
+text-align: center;
+color:rgb(95, 42, 42)
+
+
+}
+ul {
+    list-style-type: none;
+}
+ul, li {
+margin:0;
+padding: 0;
+
+}
