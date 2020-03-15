@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}/* I reorganized everything in order of    <tags>,<classes/Id's> */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+/* I made sure each class was grouped properly    */
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div { /*   I consolodated the header div ul with header div ul li*/
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.header div ul li {
+    list-style-type: none;
+    display: inline-block;/* The difference between this and inline = inline do not allow padding on all sides just L & R*/
+    margin-left: 25px;
+}
+
+
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* I was tempted to manuever the two floats ...but then logic.*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+/* Benefit column was condensed enough    */
+.benefit-col  {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+
+.benefit-col h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.benefit-col img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* I was curious whether to leave the 3 classes or condense down to just one so I condensed them.*/
+.search-engine-optimization, .online-reputation-management,.social-media-marketing   {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #005e9c;          /*I darkend the hue of this blue to add depth and  is saved just incase the client wanted to keep the colors the same.*/                                                /* #0072bb*/
+    color: #ffffff;
+}
+/* I was not sure if I could condense this one down*/
+/* I tried adding a class however it did not work but maybe I put something in the wrong place*/
+.search-engine-optimization img , .online-reputation-management img , .social-media-marketing img  {
+    max-height: 200px;
+}
+/* I'm curious if we can use javascript to turn some of the html into variabls and then adjust it from there.*/
+
+.row_h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* created a class footer instead of */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    text-align: center;
+
+}
+.footer h2 {
+
+    font-size: 20px;
+}
