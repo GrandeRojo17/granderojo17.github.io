@@ -1,5 +1,6 @@
-(last edit) 3/14/2020
+(last edit) 3/15/2020
 I placed notes for all the changes in the css that I made and a little bit of my thought process to guage what I was thinking at the time
 I attempted a couple different things in the css and most all changes to just small consoldations.
 
 I work from both my desktop and laptop and have noticed it can be difficult managing too many files between the computers at once.
+ (3/15/20)Had to reupload and delete a few seperate times and this got to be very confusing.
