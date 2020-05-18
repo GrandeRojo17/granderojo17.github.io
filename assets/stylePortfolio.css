@@ -13,7 +13,7 @@
   --fourthChoice-color: #c7e8f3;
 }
 body {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
   font-family: "Walter+Turncoat", sans-serif;
   margin: 0;
   transition: transform 0.5s ease-in-out;
