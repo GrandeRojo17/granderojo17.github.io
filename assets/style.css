@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --modal-duration: 1s;
+  --primary-color: #d3a4d6;
+  --secondary-color: #d8a1fd;
+  --thirdChoice-color: #79f526;
+  --fifthChoice-color: #f25e99;
+  --fourthChoice-color: #c7e8f3;
+}
+body {
+  font-family: "Walter+Turncoat", sans-serif;
+  margin: 0;
+  transition: transform 0.5s ease-in-out;
+}
+body.show-nav {
+  transform: translate(256px);
+}
+/* nav img{
+    width: 105px;
+} */
+
+nav {
+  background-color: var(--primary-color);
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+nav h2 {
+  color: aliceblue;
+}
+nav .logo {
+  padding: 15px;
+  text-align: center;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+nav .logo img {
+  height: 200px;
+
+  border-radius: 25%;
+}
+nav ul li {
+  text-align: center;
+  border-bottom: 2px solid rgba(72, 255, 87, 0.1);
+  padding: 20px;
+}
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(163, 250, 82, 0.562);
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+} /* --The pop up buttonHere --*/
+.notification-container {
+  background-color: rgba(100, 100, 200, 0.3);
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  top: -50px;
+
+  transition: transform 0.5 ease-in-out;
+}
+/* .notification-container p {
+  background-attachment: fixed;
+   margin: 0; 
+} */
+.notification-container.show {
+  transform: translateY(50px);
+}
+/* --Banner of page started Here --*/
+header {
+  padding: 75px;
+  background-color: var(--secondary-color);
+  font-size: 100%;
+  position: relative;
+  padding: 40px 15px;
+  text-align: center;
+  height: 233px;
+  width: 100%;
+}
+header h1 {
+  color: var(--primary-color);
+  /* padding:10px; */
+  /* width: 100%vw; */
+}
+header p {
+  color: #542970;
+  margin: 5px 0;
+} /* --Focus on Button started Here --*/
+button,
+input[type="submit"] {
+  /*this is the contact me button*/
+  background-color: rgba(54, 54, 129, 0.9);
+  border: 0;
+  border-radius: 5px;
+  color: rgb(252, 232, 232);
+  cursor: pointer;
+  padding: 8px 5px;
+  box-shadow: -1px 1px 20px rgba(38, 38, 117, 0.9);
+}
+button:focus {
+  outline: none;
+}
+.toggle {
+  background-color: rgba(100, 100, 200, 0.3);
+  position: absolute;
+  top: 23px;
+  left: 23px;
+}
+.ctn-btn {
+  padding: 12px 20px;
+  font-size: 20px;
+}
+
+.full-container {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  border: 1px solid blanchedalmond;
+  text-align: center;
+  color: rgb(233, 233, 233);
+  background-color: rgba(100, 100, 200, 0.3);
+  padding: 45px;
+  max-height: 100%;
+  width: 100%;
+  max-width: 850px;
+
+  /* width: 856px; */
+}
+.container h2 {
+  color: chartreuse;
+  background-image: linear-gradient(red yellow);
+  text-align: center;
+} /*-----------------------------------Container Link -----------------------*/
+.container a {
+  color: #99d1ff;
+}
+.container a:hover {
+  color: rgba(255, 140, 140, 0.6);
+}
+.container a:visited {
+  color: rgb(123, 8, 255);
+}
+.container ul {
+  font-weight: bold;
+  text-shadow: #333;
+  list-style-type: none;
+  text-align: center;
+} /* --Modal started Here --*/
+.modal-container {
+  background-color: rgba(243, 252, 238, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-container.show-modal {
+  display: block;
+}
+.modal-container a {
+  color: rgb(250, 244, 244);
+}
+.modal-container a:hover {
+  color: var(--fifthChoice-color);
+}
+.modal {
+  background-color: var(--thirdChoice-color);
+  border-radius: 9px;
+  box-shadow: 0 0 25px rgba(100, 100, 200, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 445px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+.modal-header h3 {
+  margin: 0;
+  border-bottom: 2px solid #333;
+}
+.modal-content p {
+  text-align: center;
+}
+.modal-content {
+  padding: 20px;
+}
+.modal-form div {
+  margin: 15px 0;
+}
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.modal-form input {
+  background-color: rgba(100, 100, 200, 0.3);
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+}
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
