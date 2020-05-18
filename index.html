@@ -17,7 +17,7 @@
     <title>My Landing Page</title>
   </head>
 
-  <body style="background-color: black;">
+  <body>
     <nav>
       <div class="logo">
         <img
@@ -50,14 +50,14 @@
         <img src="./assets/DavidLogo_01.png" alt="Menu-Button" />
         <!-- <i class="fa fa-hamburger fa-2x"></i> -->
       </button>
-
       <h1>Want to take a dive into Web-Developement?</h1>
-      <p>"Create with me"</p>
-
-      <button class="cta-btn" id="open">Contact Me!</button>
     </header>
+    <br />
     <div class="full-container">
       <div class="container">
+        <p>"Create with me"</p>
+        <button class="cta-btn" id="open">Contact Me!</button>
+
         <h2>Who am I?</h2>
         <p>
           I am young and talented computer nerd who enjoys creating as many
@@ -111,7 +111,7 @@
           </h3>
         </div>
         <div class="modal-content">
-          <p><strong>Want to get in contact with me?</strong></p>
+          <p><strong>contact me for great offers and ideas.</strong></p>
           <form class="modal-form">
             <div>
               <label for="name">Name</label>
@@ -138,6 +138,12 @@
       </div>
     </div>
 
-    <script src="./assets/script.js"></script>
+    <script src="./assets/script.js">
+
+      function borderOpacity(){
+          let opacityChange = document.getElementById("borderOpacity").style.color = "var(--primary-color)";
+
+          document.getElementById("p2").style.color = "blue";}
+    </script>
   </body>
 </html>

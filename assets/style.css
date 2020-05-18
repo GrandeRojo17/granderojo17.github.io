@@ -6,17 +6,28 @@
 }
 :root {
   --modal-duration: 1s;
-  --primary-color: #d3a4d6;
-  --secondary-color: #d8a1fd;
+  --primary-color: #60a7f7;
+  --primary-head-color: #ffffff;
+  --bg-color-primary: #fdf4f4;
+  --secondary-color: #e0cfee;
   --thirdChoice-color: #79f526;
   --fifthChoice-color: #f25e99;
   --fourthChoice-color: #c7e8f3;
+  --darkThirds-color: rgb(27, 17, 17);
+  --secondary-Grays-color: rgba(214, 214, 199, 0.753);
+  --superColor-purp: ;
 }
 body {
   font-family: "Walter+Turncoat", sans-serif;
   margin: 0;
   transition: transform 0.5s ease-in-out;
+  height: 100%;
+  /* background-image: repeating-linear-gradient(
+    var(--secondary-color),
+    rgb(96, 126, 88)
+  ); */
 }
+
 body.show-nav {
   transform: translate(256px);
 }
@@ -25,7 +36,11 @@ body.show-nav {
 } */
 
 nav {
-  background-color: var(--primary-color);
+  background-image: repeating-linear-gradient(
+    var(--secondary-color),
+    rgb(96, 126, 88)
+  );
+  /* background-color: var(--primary-color); */
   border-right: 2px solid rgba(200, 200, 200, 0.1);
   position: fixed;
   top: 0;
@@ -84,35 +99,89 @@ nav ul li a:hover {
 }
 /* --Banner of page started Here --*/
 header {
+  margin: 0;
   padding: 75px;
   background-color: var(--secondary-color);
-  font-size: 100%;
+  font-size: 200%;
   position: relative;
   padding: 40px 15px;
   text-align: center;
-  height: 233px;
-  width: 100%;
+  
+  max-width: 100%;
 }
+
 header h1 {
-  color: var(--primary-color);
+  text-align: center;
+  color: var(--primary-head-color);
+  text-shadow: 2px 2px var(--secondary-Grays-color);
   /* padding:10px; */
   /* width: 100%vw; */
 }
-header p {
-  color: #542970;
-  margin: 5px 0;
-} /* --Focus on Button started Here --*/
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: var(--bg-color-primary);
+  }
+  .container {
+    background-color: pink;
+  }
+  header {
+    height: 200px;
+    margin: 0;
+    background-color: rgb(248, 99, 99);
+  }
+  header h1 {
+    margin-top: 45px;
+
+    height: 200px;
+    margin: 50;
+   
+  }
+  button img {
+    height: 75px;
+    padding: 15px;
+    text-align: center;
+  }
+  nav .logo img {
+    height: 300px;
+
+    border-radius: 75%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    
+    font-size: 15px;
+    height: 200px;
+    background-color: rgb(99, 248, 241);
+  }
+  button img {
+    height: 156px;
+    width:10px;
+    padding: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width:1410px){
+
+  header h1{
+    font-size: 45px;
+  }
+}
+/* --Focus on Button started Here --*/
 button,
 input[type="submit"] {
   /*this is the contact me button*/
-  background-color: rgba(54, 54, 129, 0.9);
+  background-color: var(--darkThirds-color);
   border: 0;
+  font-weight: bolder;
   border-radius: 5px;
   color: rgb(252, 232, 232);
   cursor: pointer;
   padding: 8px 5px;
   box-shadow: -1px 1px 20px rgba(38, 38, 117, 0.9);
 }
+
 button:focus {
   outline: none;
 }
@@ -132,27 +201,28 @@ button:focus {
   justify-content: center;
 }
 .container {
-  border: 1px solid blanchedalmond;
+  border-bottom: 15px solid var(--secondary-Grays-color);
   text-align: center;
   color: rgb(233, 233, 233);
-  background-color: rgba(100, 100, 200, 0.3);
+  /* //background color for the text container */
+  background-color: rgb(111, 111, 124);
   padding: 45px;
   max-height: 100%;
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
 
   /* width: 856px; */
 }
 .container h2 {
   color: chartreuse;
-  background-image: linear-gradient(red yellow);
+
   text-align: center;
 } /*-----------------------------------Container Link -----------------------*/
 .container a {
   color: #99d1ff;
 }
 .container a:hover {
-  color: rgba(255, 140, 140, 0.6);
+  color: rgba(255, 140, 140, 1);
 }
 .container a:visited {
   color: rgb(123, 8, 255);
@@ -238,5 +308,9 @@ button:focus {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 400px) {
+  .toggle {
   }
 }
